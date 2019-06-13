@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rrC-tt-JlK">
+                                <rect key="frame" x="137.5" y="120" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="7nw-cT-4qc"/>
+                                    <constraint firstAttribute="height" constant="30" id="hrs-vd-wqJ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PS3-LT-P9Y">
+                                <rect key="frame" x="137.5" y="200" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1fa-3F-N1F"/>
+                                    <constraint firstAttribute="height" constant="30" id="PcL-ev-jrh"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnI-vH-Ygg">
+                                <rect key="frame" x="172" y="280" width="31" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HLH-Zv-u5K"/>
+                                </constraints>
+                                <state key="normal" title="登录"/>
+                                <connections>
+                                    <action selector="loginClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="StM-0U-rmR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J66-DE-Hwf">
+                                <rect key="frame" x="301" y="200" width="44" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="hLK-mB-q2x"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="hqh-rH-MUz"/>
+                                </constraints>
+                                <state key="normal" title="删除"/>
+                                <connections>
+                                    <action selector="deleteClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ek-17-u9e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PS3-LT-P9Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AnN-4D-3pW"/>
+                            <constraint firstItem="gnI-vH-Ygg" firstAttribute="top" secondItem="PS3-LT-P9Y" secondAttribute="bottom" constant="50" id="D9B-hz-Kc2"/>
+                            <constraint firstItem="J66-DE-Hwf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PS3-LT-P9Y" secondAttribute="trailing" constant="8" symbolic="YES" id="E05-jJ-Ba9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J66-DE-Hwf" secondAttribute="trailing" constant="30" id="K3X-98-jxP"/>
+                            <constraint firstItem="rrC-tt-JlK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Rln-xG-RXT"/>
+                            <constraint firstItem="gnI-vH-Ygg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y7S-dg-F37"/>
+                            <constraint firstItem="rrC-tt-JlK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aJ9-j3-gRy"/>
+                            <constraint firstItem="J66-DE-Hwf" firstAttribute="centerY" secondItem="PS3-LT-P9Y" secondAttribute="centerY" id="lFX-22-3rS"/>
+                            <constraint firstItem="PS3-LT-P9Y" firstAttribute="top" secondItem="rrC-tt-JlK" secondAttribute="bottom" constant="50" id="vVl-Jb-P0w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="accountInput" destination="rrC-tt-JlK" id="thL-gU-ckq"/>
+                        <outlet property="passInput" destination="PS3-LT-P9Y" id="6qS-Vs-sIQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
